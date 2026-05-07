@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <link name="$(arg prefix)Custom_Mount">
+        <inertial>
+            <origin xyz="-0.023355595694969124 -6.48835204137601e-09 -0.06681971587034023" rpy="0.0 0.0 0.0" />
+            <mass value="0.19174584619468998" />
+            <inertia ixx="0.00030318768351596454" iyy="0.0002565907470589814" izz="0.00010736410234318538" ixy="-7.997383207088353e-12" iyz="-4.983854666343392e-11" ixz="1.9723572049092477e-06" />
+        </inertial>
+        <visual name="Custom_Mount_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/custom_mount/Custom_Mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="trossen_black" />
+        </visual>
+        <collision name="Custom_Mount_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/custom_mount/Custom_Mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+</robot>

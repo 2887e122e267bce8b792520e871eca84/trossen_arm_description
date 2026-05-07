@@ -8,6 +8,12 @@
   <xacro:arg name="ros2_control_hardware_type"      default="real"/>        <!-- 'real', 'mock_components' -->
   <xacro:arg name="ip_address"                      default="192.168.1.2"/>
   <xacro:arg name="base_link_frame"                 default="base_link"/>
+  <xacro:arg name="use_suction_cup"                 default="true"/>
+  <xacro:arg name="use_downdraft"                   default="true"/>
+  <xacro:arg name="xyz"                             default="0.75 -0.134 0.99"/>
+  <xacro:arg name="rpy"                             default="0 0 1.57"/>
+  <xacro:arg name="custom_mount_xyz"                default="-0.029 0.0 -0.02"/>
+  <xacro:arg name="custom_mount_rpy"                default="0 0 0"/>
 
   <xacro:if value="$(arg use_world_frame)">
     <link name="world"/>
@@ -21,14 +27,49 @@
 
   <xacro:include filename="$(find trossen_arm_description)/urdf/macros/_wxai.urdf.xacro" />
   <xacro:include filename="$(find trossen_arm_description)/urdf/macros/_common.urdf.xacro" />
+  <xacro:include filename="$(find trossen_arm_description)/urdf/custom_mount.xacro" />
 
   <xacro:trossen_black/>
 
   <xacro:wxai
-    variant="$(arg variant)"
-    arm_side="$(arg arm_side)"
-    prefix="$(arg prefix)"
-    ros2_control_hardware_type="$(arg ros2_control_hardware_type)"
-    ip_address="$(arg ip_address)"/>
+      variant="$(arg variant)"
+      arm_side="$(arg arm_side)"
+      prefix="$(arg prefix)"
+      ros2_control_hardware_type="$(arg ros2_control_hardware_type)"
+      ip_address="$(arg ip_address)"/>
+
+  <xacro:if value="$(arg use_downdraft)">
+    <xacro:include filename="$(find trossen_arm_description)/urdf/downdraft.xacro" />
+    <joint name="$(arg prefix)table_to_arm" type="fixed">
+      <parent link="$(arg prefix)Bottom_Box"/>
+      <child link="$(arg prefix)base_link"/>
+      <origin xyz="$(arg xyz)" rpy="$(arg rpy)"/>
+    </joint>
+  </xacro:if>
+
+  <xacro:unless value="$(arg use_downdraft)">
+    <link name="world"/>
+    <joint name="$(arg prefix)world_to_arm" type="fixed">
+        <parent link="world"/>
+        <child link="$(arg prefix)base_link"/>
+        <origin xyz="$(arg xyz)" rpy="$(arg rpy)"/>
+    </joint>
+  </xacro:unless>
+
+  <xacro:if value="$(arg use_suction_cup)">
+    <xacro:include filename="$(find trossen_arm_description)/urdf/suction_cup.xacro" />
+    <joint name="$(arg prefix)base_and_suction" type="fixed">
+      <parent link="$(arg prefix)link_6" /> 
+      <child link="$(arg prefix)base_mount" /> 
+      <origin xyz="0.0613 0 -0.028" rpy="0 ${pi} 0" /> 
+    </joint>
+  </xacro:if>
+
+  <joint name="$(arg prefix)custom_mount_gripper" type="fixed">
+    <parent link="$(arg prefix)link_6" />
+    <child link="$(arg prefix)Custom_Mount" />
+    <origin xyz="$(arg custom_mount_xyz)" rpy="$(arg custom_mount_rpy)" />
+  </joint>
+
 
 </robot>
