@@ -31,7 +31,7 @@
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/custom/suction_mount.stl" scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="black"/>
+            <material name="trossen_black"/>
         </visual>
         <collision name="suction_mount_collision">
             <origin xyz="0.015894873275837402 -0.0029999999999999094 -0.035702381756545915" rpy="-1.5707963267948966 -1.5707963267948803 0" />
