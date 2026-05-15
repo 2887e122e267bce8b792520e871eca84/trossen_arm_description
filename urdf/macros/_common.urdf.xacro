@@ -39,4 +39,12 @@
         <color rgba="0.0 0.7 0.7 1.0" />
     </material>
 
+    <material name="yellow">
+        <color rgba="1.0 1.0 0.0 1.0"/>
+    </material>
+
+    <material name="light_green">
+        <color rgba="0.5 1.0 0.5 1.0"/>
+    </material>
+
 </robot>

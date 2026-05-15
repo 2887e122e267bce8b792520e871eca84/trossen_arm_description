@@ -2,61 +2,21 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <link name="$(arg prefix)Pedestal">
         <inertial>
-            <origin xyz="2.2026824808563106e-15 0.3075696855589311 0.1500000000000003" rpy="0.0 -0.0 0.0" />
+            <origin xyz="2.486899575160351e-15 0.3075696855589309 0.24999999999999856" rpy="0.0 -0.0 0.0" />
             <mass value="589.894824375" />
-            <inertia ixx="34.27470062751247" iyy="15.589092178253196" izz="41.01537044013887" ixy="1.8474111129762605e-12" iyz="1.2043699371133698e-12" ixz="-3.055333763768431e-13" />
+            <inertia ixx="34.27470062751247" iyy="15.58909217825311" izz="41.01537044013878" ixy="1.8474111129762605e-12" iyz="1.2079226507921703e-12" ixz="-2.8421709430404007e-13" />
         </inertial>
         <visual name="Pedestal_visual">
-            <origin xyz="-0.574999999999989 2.842170943040401e-16 1.4210854715202005e-15" rpy="4.3367040406321e-15 1.2879808064022797e-15 -1.2246467991473774e-16" />
+            <origin xyz="-0.5749999999999887 7.041719095097274e-17 0.09999999999999964" rpy="4.3367040406321e-15 1.2879808064022797e-15 -1.224646799147377e-16" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Pedestal.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="light_grey" />
         </visual>
         <collision name="Pedestal_collision">
-            <origin xyz="-0.574999999999989 2.842170943040401e-16 1.4210854715202005e-15" rpy="4.3367040406321e-15 1.2879808064022797e-15 -1.2246467991473774e-16" />
+            <origin xyz="-0.5749999999999887 7.041719095097274e-17 0.09999999999999964" rpy="4.3367040406321e-15 1.2879808064022797e-15 -1.224646799147377e-16" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Pedestal.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    <link name="$(arg prefix)Vibration_Table_Plate">
-        <inertial>
-            <origin xyz="-0.18206099999983927 -0.007664052399322401 -0.2765000000000002" rpy="0.0 -0.0 0.0" />
-            <mass value="0.4411299052650983" />
-            <inertia ixx="0.006447681484521128" iyy="0.008936669745286625" izz="0.002507894037122649" ixy="-2.281433565778401e-33" iyz="1.3877787807814457e-17" ixz="-6.938893903907228e-18" />
-        </inertial>
-        <visual name="Vibration_Table_Plate_visual">
-            <origin xyz="-0.18206100000000358 -9.947598300641404e-16 -0.2765000000000001" rpy="3.141592653589793 -1.5790453279204058e-16 -2.88723966142305e-15" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Table_Plate.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="green" />
-        </visual>
-        <collision name="Vibration_Table_Plate_collision">
-            <origin xyz="-0.18206100000000358 -9.947598300641404e-16 -0.2765000000000001" rpy="3.141592653589793 -1.5790453279204058e-16 -2.88723966142305e-15" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Table_Plate.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    <link name="$(arg prefix)Vibration_Table_Top_Plate">
-        <inertial>
-            <origin xyz="-0.08500000000004555 -0.12863189200418276 -0.08206827079260165" rpy="0.0 -1.686751670916884e-80 0.0" />
-            <mass value="1.6515666860958056" />
-            <inertia ixx="0.02921444188535504" iyy="0.02854099552704281" izz="0.01795837144115308" ixy="6.605826996519681e-15" iyz="0.004676561117026966" ixz="-7.313594174718216e-15" />
-        </inertial>
-        <visual name="Vibration_Table_Top_Plate_visual">
-            <origin xyz="-0.08499999999999645 -0.051200000000002036 -0.1599999999999991" rpy="-3.141592653589793 1.5790453279204125e-16 -3.1415926535897905" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Table_Top_Plate.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="green" />
-        </visual>
-        <collision name="Vibration_Table_Top_Plate_collision">
-            <origin xyz="-0.08499999999999645 -0.051200000000002036 -0.1599999999999991" rpy="-3.141592653589793 1.5790453279204125e-16 -3.1415926535897905" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Table_Top_Plate.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -320,126 +280,6 @@
             </geometry>
         </collision>
     </link>
-    <link name="$(arg prefix)RealSense_Holder_01">
-        <inertial>
-            <origin xyz="-0.018229927806950742 -6.394884621840901e-16 0.004819089911901102" rpy="0.0 -0.0 0.0" />
-            <mass value="0.02247204185629278" />
-            <inertia ixx="7.987660902550667e-06" iyy="5.853876976928685e-06" izz="6.244287812401383e-06" ixy="-1.0883240502348433e-39" iyz="8.673617379884035e-19" ixz="-2.2713681346181458e-07" />
-        </inertial>
-        <visual name="RealSense_Holder_01_visual">
-            <origin xyz="-0.015000000000006253 -6.394884621840901e-16 0.00549999999999784" rpy="1.4834529322681125e-27 -1.5707963267948277 0" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/RealSense_Holder_01.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="trossen_black" />
-        </visual>
-        <collision name="RealSense_Holder_01_collision">
-            <origin xyz="-0.015000000000006253 -6.394884621840901e-16 0.00549999999999784" rpy="1.4834529322681125e-27 -1.5707963267948277 0" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/RealSense_Holder_01.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    <link name="$(arg prefix)RealSense_D405">
-        <inertial>
-            <origin xyz="0.009917241762985399 -8.444911290588664e-05 -0.011588646649212251" rpy="0.0 -0.0 0.0" />
-            <mass value="0.10460745071412574" />
-            <inertia ixx="1.918353252874927e-05" iyy="1.9198815987664375e-05" izz="2.928521893961339e-05" ixy="9.397292145829628e-10" iyz="2.8914404155699902e-08" ixz="4.069419969054966e-08" />
-        </inertial>
-        <visual name="RealSense_D405_visual">
-            <origin xyz="0.009999999999996732 7.105427357601002e-16 -0.02300000000000665" rpy="3.141592653589793 5.183236436644631e-14 4.5386036051049155e-14" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/RealSense_D405.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="pink" />
-        </visual>
-        <collision name="RealSense_D405_collision">
-            <origin xyz="0.009999999999996732 7.105427357601002e-16 -0.02300000000000665" rpy="3.141592653589793 5.183236436644631e-14 4.5386036051049155e-14" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/RealSense_D405.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    <link name="$(arg prefix)RealSense_Holder_02">
-        <inertial>
-            <origin xyz="-0.005936392109073552 7.105427357601002e-16 0.006092882276308132" rpy="0.0 -0.0 0.0" />
-            <mass value="0.04528239081499246" />
-            <inertia ixx="4.348175418397021e-05" iyy="3.834049476282575e-05" izz="7.948625230055906e-06" ixy="6.938893903907228e-18" iyz="-4.872054301580487e-37" ixz="2.0962828094529817e-06" />
-        </inertial>
-        <visual name="RealSense_Holder_02_visual">
-            <origin xyz="-5.684341886080802e-15 4.263256414560601e-16 -4.263256414560601e-16" rpy="1.5707963267948966 1.2246467991472233e-16 -1.5707963267949485" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/RealSense_Holder_02.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="trossen_black" />
-        </visual>
-        <collision name="RealSense_Holder_02_collision">
-            <origin xyz="-5.684341886080802e-15 4.263256414560601e-16 -4.263256414560601e-16" rpy="1.5707963267948966 1.2246467991472233e-16 -1.5707963267949485" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/RealSense_Holder_02.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    <link name="$(arg prefix)Mail_Spreader_Housing">
-        <inertial>
-            <origin xyz="-0.3361644945508563 0.09853169244584294 -0.1265639780184468" rpy="0.0 -0.0 0.0" />
-            <mass value="1.3503248555656515" />
-            <inertia ixx="0.010860649153036528" iyy="0.012548432636851792" izz="0.005323094778671322" ixy="6.128069080180154e-06" iyz="1.943949851701543e-06" ixz="-7.7619811746088e-06" />
-        </inertial>
-        <visual name="Mail_Spreader_Housing_visual">
-            <origin xyz="-0.33599996948241995 0.099999999999999 -0.12649999999552963" rpy="3.141592653589793 -1.1867431542480785e-15 3.141592653589792" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Spreader_Housing.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="blue_green" />
-        </visual>
-        <collision name="Mail_Spreader_Housing_collision">
-            <origin xyz="-0.33599996948241995 0.099999999999999 -0.12649999999552963" rpy="3.141592653589793 -1.1867431542480785e-15 3.141592653589792" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Spreader_Housing.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    <link name="$(arg prefix)Mail_Top_Plate">
-        <inertial>
-            <origin xyz="0.00039045258969920836 0.07777729890291823 -4.4699177692564265e-12" rpy="0.0 -0.0 0.0" />
-            <mass value="0.10289779989387632" />
-            <inertia ixx="0.0009355708001280993" iyy="0.0006773485845179283" izz="0.0002605335422558863" ixy="-1.2686369732367586e-06" iyz="1.0547118733938987e-15" ixz="3.757297211838921e-60" />
-        </inertial>
-        <visual name="Mail_Top_Plate_visual">
-            <origin xyz="8.526512829121202e-16 0.07499999948242049 -4.47020198635073e-12" rpy="3.141592653589793 -9.498955756613785e-16 -1.570796326794895" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Top_Plate.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="blue_green" />
-        </visual>
-        <collision name="Mail_Top_Plate_collision">
-            <origin xyz="8.526512829121202e-16 0.07499999948242049 -4.47020198635073e-12" rpy="3.141592653589793 -9.498955756613785e-16 -1.570796326794895" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Top_Plate.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    <link name="$(arg prefix)Letter_Trimmer_Holder">
-        <inertial>
-            <origin xyz="0.015946342707956234 -0.028271130182679797 -0.035505987987936256" rpy="0.0 -0.0 0.0" />
-            <mass value="0.04261465730068011" />
-            <inertia ixx="7.356311982253255e-05" iyy="4.8229177488472164e-05" izz="3.424954739406072e-05" ixy="2.322416738448352e-06" iyz="6.831346257771265e-09" ixz="-4.069121635127959e-09" />
-        </inertial>
-        <visual name="Letter_Trimmer_Holder_visual">
-            <origin xyz="0.007500000517580219 -0.0344999999999996 -0.03550000000447" rpy="-1.570796326794895 -1.5707963267948952 0" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Letter_Trimmer_Holder.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="pink" />
-        </visual>
-        <collision name="Letter_Trimmer_Holder_collision">
-            <origin xyz="0.007500000517580219 -0.0344999999999996 -0.03550000000447" rpy="-1.570796326794895 -1.5707963267948952 0" />
-            <geometry>
-                <mesh filename="package://trossen_arm_description/meshes/downdraft/Letter_Trimmer_Holder.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
     <link name="$(arg prefix)Top_Camera_frame">
         <inertial>
             <origin xyz="0.0 -4.973799150320702e-16 -1.1161829652996849" rpy="0.0 -0.0 0.0" />
@@ -451,7 +291,7 @@
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Top_Camera_frame.stl" scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="light_grey"/>
+            <material name="light_grey" />
         </visual>
         <collision name="Top_Camera_frame_collision">
             <origin xyz="-0.5769999999999998 0.3500000000000001 -2.842170943040401e-16" rpy="3.141592653589793 -0.0 0.0" />
@@ -460,114 +300,224 @@
             </geometry>
         </collision>
     </link>
-    <joint name="Vib_Table_Top_Plate_and_Vib_Table_Plate" type="fixed">
-        <origin xyz="-0.267061 -0.025 -0.4365" rpy="-3.141592653589793 -0.0 -3.141592653589793" />
-        <parent link="$(arg prefix)Vibration_Table_Plate" />
-        <child link="$(arg prefix)Vibration_Table_Top_Plate" />
-    </joint>
-    <joint name="Chute_Right_and_Chute_House" type="fixed">
+    <link name="$(arg prefix)Mail_Spreader_Housing">
+        <inertial>
+            <origin xyz="0.07474878535887863 -0.09297671857199007 0.07359079941501265" rpy="0.0 -4.663963129396153e-77 0.0" />
+            <mass value="0.7818877668805357" />
+            <inertia ixx="0.003421827232823471" iyy="0.004391842901898757" izz="0.003363332496486904" ixy="-8.893594203307487e-07" iyz="2.2033683709787866e-06" ixz="-9.83418910645989e-06" />
+        </inertial>
+        <visual name="Mail_Spreader_Housing_visual">
+            <origin xyz="0.07500000000000098 -0.10000000000000085 0.075000000000001" rpy="-3.141592653589793 -1.5707963267948915 0" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Spreader_Housing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="light_green" />
+        </visual>
+        <collision name="Mail_Spreader_Housing_collision">
+            <origin xyz="0.07500000000000098 -0.10000000000000085 0.075000000000001" rpy="-3.141592653589793 -1.5707963267948915 0" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Spreader_Housing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Mail_Top_Plate">
+        <inertial>
+            <origin xyz="3.258106006185813e-05 0.07820551417803373 1.0480505352461477e-15" rpy="-2.8486550277460926e-64 -0.0 0.0" />
+            <mass value="0.08915200000000002" />
+            <inertia ixx="0.00038731642016922446" iyy="0.0002032497645628878" izz="0.00018581264713213308" ixy="-1.370908783160374e-06" iyz="1.3738562485500568e-35" ixz="1.4022694188951907e-36" />
+        </inertial>
+        <visual name="Mail_Top_Plate_visual">
+            <origin xyz="-2.842170943040401e-16 0.07500000000000072 1.0214051826551441e-15" rpy="-3.141592653589793 -4.857225732735153e-16 -1.5707963267948915" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Top_Plate.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="light_green" />
+        </visual>
+        <collision name="Mail_Top_Plate_collision">
+            <origin xyz="-2.842170943040401e-16 0.07500000000000072 1.0214051826551441e-15" rpy="-3.141592653589793 -4.857225732735153e-16 -1.5707963267948915" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Top_Plate.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Letter_Trimmer_Holder">
+        <inertial>
+            <origin xyz="0.028766362717210114 -0.01952090557411964 -2.3980817331903383e-16" rpy="2.8486550277460926e-64 -0.0 0.0" />
+            <mass value="0.041840657300680255" />
+            <inertia ixx="4.5702849910768395e-05" iyy="7.05949785265586e-05" izz="3.3560235428872764e-05" ixy="-2.2850515949551786e-06" iyz="-2.918709552920438e-35" ixz="-2.168404344971009e-18" />
+        </inertial>
+        <visual name="Letter_Trimmer_Holder_visual">
+            <origin xyz="0.034500000000000454 -0.028000000000000684 1.1191048088221578e-15" rpy="5.2085854454827684e-15 -1.5707963267948961 0" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Letter_Trimmer_Holder.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="pink" />
+        </visual>
+        <collision name="Letter_Trimmer_Holder_collision">
+            <origin xyz="0.034500000000000454 -0.028000000000000684 1.1191048088221578e-15" rpy="5.2085854454827684e-15 -1.5707963267948961 0" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Letter_Trimmer_Holder.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Vibration_Rack">
+        <inertial>
+            <origin xyz="-3.560925775730084e-05 -0.05658320071581926 0.03505806254969656" rpy="0.0 -0.0 0.0" />
+            <mass value="9.687032297505903" />
+            <inertia ixx="0.10672472798451338" iyy="0.3070441039085452" izz="0.23522193770247846" ixy="3.995602255724151e-06" iyz="0.003855536422117556" ixz="-1.2093209676544703e-05" />
+        </inertial>
+        <visual name="Vibration_Rack_visual">
+            <origin xyz="-2.842170943040401e-16 7.389644451905042e-15 7.105427357601002e-17" rpy="-3.141592653589793 2.0907912740951003e-14 -2.7316076737125388e-14" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Rack.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="blue_green" />
+        </visual>
+        <collision name="Vibration_Rack_collision">
+            <origin xyz="-2.842170943040401e-16 7.389644451905042e-15 7.105427357601002e-17" rpy="-3.141592653589793 2.0907912740951003e-14 -2.7316076737125388e-14" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Rack.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Vibration_Rack_Baseplate">
+        <inertial>
+            <origin xyz="-0.23049999999999743 0.0059425450065914735 0.1499999999999993" rpy="0.0 -0.0 0.0" />
+            <mass value="1.9339628174588095" />
+            <inertia ixx="0.02085303052106169" iyy="0.06366362420799082" izz="0.04294565651272153" ixy="-1.3322676295501878e-15" iyz="5.551115123125783e-17" ixz="-2.7755575615628914e-17" />
+        </inertial>
+        <visual name="Vibration_Rack_Baseplate_visual">
+            <origin xyz="-0.23049999999999876 -6.8212102632969615e-15 0.1499999999999994" rpy="3.944304526105065e-31 1.6434924467491004e-15 2.960591172541443e-14" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Rack_Baseplate.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="yellow" />
+        </visual>
+        <collision name="Vibration_Rack_Baseplate_collision">
+            <origin xyz="-0.23049999999999876 -6.8212102632969615e-15 0.1499999999999994" rpy="3.944304526105065e-31 1.6434924467491004e-15 2.960591172541443e-14" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Rack_Baseplate.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Vibration_Rack_Base">
+        <inertial>
+            <origin xyz="-0.23050000000000437 -0.025968639122598773 0.15500000000000866" rpy="0.0 -0.0 0.0" />
+            <mass value="1.7818591516603366" />
+            <inertia ixx="0.021644302791165693" iyy="0.06399137638580299" izz="0.04245645563593259" ixy="4.107825191113079e-15" iyz="-8.326672684688674e-16" ixz="1.7541523789077473e-14" />
+        </inertial>
+        <visual name="Vibration_Rack_Base_visual">
+            <origin xyz="-0.2304999999999872 -0.01999999999999204 0.15500000000000067" rpy="3.141592653589793 -6.998028758169689e-16 -2.855865576422289e-14" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Rack_Base.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="green" />
+        </visual>
+        <collision name="Vibration_Rack_Base_collision">
+            <origin xyz="-0.2304999999999872 -0.01999999999999204 0.15500000000000067" rpy="3.141592653589793 -6.998028758169689e-16 -2.855865576422289e-14" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/downdraft/Vibration_Rack_Base.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="$(arg prefix)Chute_Right_and_Chute_House" type="fixed">
         <origin xyz="-0.26100000000000007 0.0019999999999998864 -0.17350000000000002" rpy="3.141592653589793 -2.465190328815662e-32 -1.5707963267948966" />
         <parent link="$(arg prefix)Chute_01" />
         <child link="$(arg prefix)Chute_02" />
     </joint>
-    <joint name="Chute_Front_and_Chute_House" type="fixed">
+    <joint name="$(arg prefix)Chute_Front_and_Chute_House" type="fixed">
         <origin xyz="-0.08424980000000006 0.0019999999999998864 -0.0015000000000000002" rpy="-3.141592653589793 1.3670076544845265e-15 -3.141592653589793" />
         <parent link="$(arg prefix)Chute_01" />
         <child link="$(arg prefix)Chute_03" />
     </joint>
-    <joint name="Rear_Panel_and_Top_Panel" type="fixed">
+    <joint name="$(arg prefix)Rear_Panel_and_Top_Panel" type="fixed">
         <origin xyz="0.5770000000000001 0.34880000000000005 0.0015000000000000568" rpy="1.5707963267948966 2.552890093070388e-31 0.0" />
         <parent link="$(arg prefix)Top_Panel" />
         <child link="$(arg prefix)Rear_Panel" />
     </joint>
-    <joint name="Top_Weld_Plate_and_Rear_Panel" type="fixed">
+    <joint name="$(arg prefix)Top_Weld_Plate_and_Rear_Panel" type="fixed">
         <origin xyz="-0.0015010000000000902 0.5 0.17920700000000003" rpy="-1.5707963267948966 1.9929409209450203e-46 1.5707963267948966" />
         <parent link="$(arg prefix)Rear_Panel" />
         <child link="$(arg prefix)Top_Weld_Plate" />
     </joint>
-    <joint name="Front_Weld_Plate_and_Top_Panel" type="fixed">
+    <joint name="$(arg prefix)Front_Weld_Plate_and_Top_Panel" type="fixed">
         <origin xyz="0.5770000000000001 -0.34879999999999994 0.0015000000000000568" rpy="1.5707963267948966 2.552890093070388e-31 0.0" />
         <parent link="$(arg prefix)Top_Panel" />
         <child link="$(arg prefix)Front_Weld_Plate" />
     </joint>
-    <joint name="Black_Plate_Exhaust_and_Top_Panel" type="fixed">
+    <joint name="$(arg prefix)Black_Plate_Exhaust_and_Top_Panel" type="fixed">
         <origin xyz="0.5770000000000001 0.34880000000000005 0.0015000000000000568" rpy="1.5707963267948966 2.552890093070388e-31 0.0" />
         <parent link="$(arg prefix)Top_Panel" />
         <child link="$(arg prefix)Back_Plate_Exhaust" />
     </joint>
-    <joint name="Side_Plate_Left_and_Top_Panel" type="fixed">
+    <joint name="$(arg prefix)Side_Plate_Left_and_Top_Panel" type="fixed">
         <origin xyz="0.5770000000000001 -0.34879999999999994 0.0" rpy="0.0 2.552890093070388e-31 0.0" />
         <parent link="$(arg prefix)Top_Panel" />
         <child link="$(arg prefix)Side_Plates_Left" />
     </joint>
-    <joint name="Side_Plate_Right_and_Top_Panel" type="fixed">
+    <joint name="$(arg prefix)Side_Plate_Right_and_Top_Panel" type="fixed">
         <origin xyz="-0.5770000000000001 -0.34879999999999994 0.0015000000000000568" rpy="3.141592653589793 -2.552890093070388e-31 3.141592653589793" />
         <parent link="$(arg prefix)Top_Panel" />
         <child link="$(arg prefix)Side_Plates_Right" />
     </joint>
-    <joint name="Vib_Table_Plate_and_Top_Panel" type="fixed">
-        <origin xyz="-0.5770000000000001 -0.34879999999999994 0.0015000000000000568" rpy="-1.5707963267948966 -2.552890093070388e-31 3.141592653589793" />
-        <parent link="$(arg prefix)Top_Panel" />
-        <child link="$(arg prefix)Vibration_Table_Plate" />
-    </joint>
-    <joint name="Chute_House_and_Top_Panel" type="fixed">
+    <joint name="$(arg prefix)Chute_House_and_Top_Panel" type="fixed">
         <origin xyz="0.5770000000000001 -0.34879999999999994 0.0015000000000000568" rpy="1.5707963267948966 2.552890093070388e-31 0.0" />
         <parent link="$(arg prefix)Top_Panel" />
         <child link="$(arg prefix)Chute_01" />
     </joint>
-    <joint name="Pedestal_and_Bottom_Box" type="fixed">
+    <joint name="$(arg prefix)Pedestal_and_Bottom_Box" type="fixed">
         <origin xyz="0.5770000000000001 0.0 0.0" rpy="1.5707963267948966 -0.0 0.0" />
         <parent link="$(arg prefix)Bottom_Box" />
         <child link="$(arg prefix)Pedestal" />
     </joint>
-    <joint name="Top_Panel_and_Bottom_Box" type="fixed">
+    <joint name="$(arg prefix)Top_Panel_and_Bottom_Box" type="fixed">
         <origin xyz="0.5770000000000001 0.349 0.97" rpy="0.0 -0.0 0.0" />
         <parent link="$(arg prefix)Bottom_Box" />
         <child link="$(arg prefix)Top_Panel" />
     </joint>
-    <joint name="Light_1_and_Top_Weld_Plate" type="fixed">
+    <joint name="$(arg prefix)Light_1_and_Top_Weld_Plate" type="fixed">
         <origin xyz="0.0 -0.08709829 0.7088370399999999" rpy="1.5707963267948966 1.5707963267948966 0" />
         <parent link="$(arg prefix)Top_Weld_Plate" />
         <child link="$(arg prefix)light_1" />
     </joint>
-    <joint name="Light_2_and_Top_Weld_Plate" type="fixed">
+    <joint name="$(arg prefix)Light_2_and_Top_Weld_Plate" type="fixed">
         <origin xyz="0.0 -0.08769323 0.45740296" rpy="-1.5707963267948966 1.5707963267948966 0" />
         <parent link="$(arg prefix)Top_Weld_Plate" />
         <child link="$(arg prefix)light_2" />
     </joint>
-    <joint name="RealSense_D405_and_RealSense_Holder_01" type="fixed">
-        <origin xyz="-0.02 0.0 -0.004500000000000028" rpy="-3.141592653589793 -1.5707963267948966 0" />
-        <parent link="$(arg prefix)RealSense_Holder_01" />
-        <child link="$(arg prefix)RealSense_D405" />
-    </joint>
-    <joint name="RealSense_Holder_01_and_RealSense_Holder_02" type="fixed">
-        <origin xyz="-0.018000000000000113 0.005649999999999977 0.03" rpy="1.5707963267948966 3.944304526105059e-31 -1.4760080696087e-45" />
-        <parent link="$(arg prefix)RealSense_Holder_02" />
-        <child link="$(arg prefix)RealSense_Holder_01" />
-    </joint>
-    <joint name="RealSense_Holder_02_and_Top_Weld_Plate" type="fixed">
-        <origin xyz="0.0 -0.14849299999999999 0.577" rpy="1.5707963267948966 -1.4760080696087e-45 -3.944304526105061e-31" />
-        <parent link="$(arg prefix)Top_Weld_Plate" />
-        <child link="$(arg prefix)RealSense_Holder_02" />
-    </joint>
-    <joint name="Letter_Trimmer_Holder_and_Mail_Spreader_Housing" type="fixed">
-        <origin xyz="-0.30149997 0.105 -0.162" rpy="3.141592653589793 -0.0 2.5528900930704243e-31" />
-        <parent link="$(arg prefix)Mail_Spreader_Housing" />
-        <child link="$(arg prefix)Letter_Trimmer_Holder" />
-    </joint>
-    <joint name="Mail_Top_Plate_and_Mail_Spreader_Housing" type="fixed">
-        <origin xyz="-0.26099997 0.17449999999999988 -0.1265" rpy="3.141592653589793 -0.0 -1.5707963267948966" />
-        <parent link="$(arg prefix)Mail_Spreader_Housing" />
-        <child link="$(arg prefix)Mail_Top_Plate" />
-    </joint>
-    <joint name="Mail_Spreader_Housing_and_Top_Panel" type="fixed">
-        <origin xyz="0.5770000000000001 -0.34879999999999994 0.0015000000000000568" rpy="1.5707963267948966 2.552890093070388e-31 0.0" />
-        <parent link="$(arg prefix)Top_Panel" />
-        <child link="$(arg prefix)Mail_Spreader_Housing" />
-    </joint>
-    <joint name="Top_Camera_Frame_and_Bottom_Box" type="fixed">
+    <joint name="$(arg prefix)Top_Camera_Frame_and_Bottom_Box" type="fixed">
         <origin xyz="0.5770000000000001 0.349 0.0" rpy="3.141592653589793 -0.0 0.0" />
         <parent link="$(arg prefix)Bottom_Box" />
         <child link="$(arg prefix)Top_Camera_frame" />
+    </joint>
+    <joint name="$(arg prefix)Letter_Trimmer_Holder_and_Mail_Spreader_Housing" type="fixed">
+        <origin xyz="0.075 -0.105 0.005" rpy="-1.5707963267948966 2.9245799595130183e-31 -1.5707963267948966" />
+        <parent link="$(arg prefix)Mail_Spreader_Housing" />
+        <child link="$(arg prefix)Letter_Trimmer_Holder" />
+    </joint>
+    <joint name="$(arg prefix)Mail_Top_Plate_and_Mail_Spreader_Housing" type="fixed">
+        <origin xyz="0.075 -0.17449999999999988 0.0" rpy="1.5707963267948966 -2.9245799595130183e-31 1.5707963267948966" />
+        <parent link="$(arg prefix)Mail_Spreader_Housing" />
+        <child link="$(arg prefix)Mail_Top_Plate" />
+    </joint>
+    <joint name="$(arg prefix)Mail_Spreader_Housing_and_Chute" type="fixed">
+        <origin xyz="-0.26100000000000007 0.0 -0.0015000000000000002" rpy="3.141592653589793 1.5707963267948966 0" />
+        <parent link="$(arg prefix)Chute_01" />
+        <child link="$(arg prefix)Mail_Spreader_Housing" />
+    </joint>
+    <joint name="$(arg prefix)Vib_Rack_Base_and_Vib_Rack_Baseplate" type="fixed">
+        <origin xyz="0.0 0.05 0.305" rpy="3.141592653589793 -0.0 2.5528900930846764e-31" />
+        <parent link="$(arg prefix)Vibration_Rack_Baseplate" />
+        <child link="$(arg prefix)Vibration_Rack_Base" />
+    </joint>
+    <joint name="$(arg prefix)Vib_Rack_and_Vib_Rack_Base" type="fixed">
+        <origin xyz="-0.23050000000000004 -0.03 0.155" rpy="0.0 -0.0 7.770197939968213e-32" />
+        <parent link="$(arg prefix)Vibration_Rack_Base" />
+        <child link="$(arg prefix)Vibration_Rack" />
+    </joint>
+    <joint name="$(arg prefix)Vib_Rack_Baseplate_and_Top_Panel" type="fixed">
+        <origin xyz="0.0 0.0 0.0015000000000000568" rpy="1.5707963267948966 2.552890093070388e-31 0.0" />
+        <parent link="$(arg prefix)Top_Panel" />
+        <child link="$(arg prefix)Vibration_Rack_Baseplate" />
     </joint>
 </robot>
