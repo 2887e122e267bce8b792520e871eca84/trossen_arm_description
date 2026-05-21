@@ -22,19 +22,19 @@
     </link>
     <link name="$(arg prefix)Chute_01">
         <inertial>
-            <origin xyz="-0.08027380309602307 0.023602865373523515 -0.21954822946951674" rpy="0.0 -0.0 0.0" />
+            <origin xyz="-0.08249380309602244 0.023602865373523515 -0.21954822946951677" rpy="0.0 -0.0 0.0" />
             <mass value="0.4016200251973849" />
-            <inertia ixx="0.005361750452761105" iyy="0.007420254096579315" izz="0.0028299950399889306" ixy="-0.00042653413194015943" iyz="0.0006737716338254679" ixz="0.0008355434112971294" />
+            <inertia ixx="0.005361750452761271" iyy="0.007420254096579371" izz="0.0028299950399888196" ixy="-0.00042653413194027046" iyz="0.0006737716338254679" ixz="0.0008355434112971155" />
         </inertial>
         <visual name="Chute_01_visual">
-            <origin xyz="-0.13650000000000262 -5.684341886080802e-16 -0.17350000000000074" rpy="3.9668211074527295e-31 -2.7195132723508904e-16 -5.208585445482765e-15" />
+            <origin xyz="-0.13872000000000215 -4.263256414560601e-16 -0.17350000000000076" rpy="3.944304526105066e-31 -2.719513272350892e-16 -5.208585445482765e-15" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Chute_01.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="orange" />
         </visual>
         <collision name="Chute_01_collision">
-            <origin xyz="-0.13650000000000262 -5.684341886080802e-16 -0.17350000000000074" rpy="3.9668211074527295e-31 -2.7195132723508904e-16 -5.208585445482765e-15" />
+            <origin xyz="-0.13872000000000215 -4.263256414560601e-16 -0.17350000000000076" rpy="3.944304526105066e-31 -2.719513272350892e-16 -5.208585445482765e-15" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Chute_01.stl" scale="0.001 0.001 0.001" />
             </geometry>
@@ -42,19 +42,19 @@
     </link>
     <link name="$(arg prefix)Chute_02">
         <inertial>
-            <origin xyz="-0.051399873652017904 -0.004954008441778939 5.329070518200751e-16" rpy="0.0 -0.0 0.0" />
+            <origin xyz="-0.05139987365201762 -0.004954008441779365 5.329070518200751e-16" rpy="0.0 -0.0 0.0" />
             <mass value="0.13589450417228027" />
-            <inertia ixx="0.0002510152481522143" iyy="0.000343857143606241" izz="9.50906039624555e-05" ixy="2.795320396820067e-07" iyz="3.4694469519536138e-18" ixz="-2.5646762703575588e-36" />
+            <inertia ixx="0.0002510152481522282" iyy="0.0003438571436062132" izz="9.509060396239999e-05" ixy="2.795320396681289e-07" iyz="-2.712554575719088e-34" ixz="-3.469446951953614e-18" />
         </inertial>
         <visual name="Chute_02_visual">
-            <origin xyz="-0.02299999999999585 -0.009999999999995736 6.039613253960852e-16" rpy="-1.5707963267948961 1.5707963267948952 0" />
+            <origin xyz="-0.022999999999995566 -0.009999999999996163 6.039613253960852e-16" rpy="-1.5707963267948961 1.5707963267948952 0" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Chute_02.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="orange" />
         </visual>
         <collision name="Chute_02_collision">
-            <origin xyz="-0.02299999999999585 -0.009999999999995736 6.039613253960852e-16" rpy="-1.5707963267948961 1.5707963267948952 0" />
+            <origin xyz="-0.022999999999995566 -0.009999999999996163 6.039613253960852e-16" rpy="-1.5707963267948961 1.5707963267948952 0" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Chute_02.stl" scale="0.001 0.001 0.001" />
             </geometry>
@@ -62,19 +62,19 @@
     </link>
     <link name="$(arg prefix)Chute_03">
         <inertial>
-            <origin xyz="2.1535188921006922e-09 0.051219203865357915 0.004954181407317954" rpy="0.0 -1.1599410094093165e-76 0.0" />
+            <origin xyz="2.1535183236665035e-09 0.051219203865357915 0.004954181407317978" rpy="0.0 -1.1570498455835856e-76 0.0" />
             <mass value="0.08184450417228083" />
-            <inertia ixx="5.776613298764943e-05" iyy="5.4695778535993056e-05" izz="0.00011110755509352588" ixy="-1.387755760818803e-17" iyz="1.6839673550484314e-07" ixz="3.68725312781012e-19" />
+            <inertia ixx="5.776613298766331e-05" iyy="5.4695778535993056e-05" izz="0.00011110755509355363" ixy="-2.775534541600249e-17" iyz="1.6839673550484314e-07" ixz="3.6872531278104992e-19" />
         </inertial>
         <visual name="Chute_03_visual">
-            <origin xyz="2.153518749992145e-09 0.022999999999997273 8.176792576364278e-16" rpy="-4.9911697530607745e-30 1.1050127114447815e-15 6.938013042892592e-15" />
+            <origin xyz="2.1535183236665035e-09 0.022999999999997415 8.429368314466501e-16" rpy="-4.976592143281927e-30 1.1050127114447813e-15 6.938013042892593e-15" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Chute_03.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="orange" />
         </visual>
         <collision name="Chute_03_collision">
-            <origin xyz="2.153518749992145e-09 0.022999999999997273 8.176792576364278e-16" rpy="-4.9911697530607745e-30 1.1050127114447815e-15 6.938013042892592e-15" />
+            <origin xyz="2.1535183236665035e-09 0.022999999999997415 8.429368314466501e-16" rpy="-4.976592143281927e-30 1.1050127114447813e-15 6.938013042892593e-15" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Chute_03.stl" scale="0.001 0.001 0.001" />
             </geometry>
@@ -302,19 +302,19 @@
     </link>
     <link name="$(arg prefix)Mail_Spreader_Housing">
         <inertial>
-            <origin xyz="0.07474878535887863 -0.09297671857199007 0.07359079941501265" rpy="0.0 -4.663963129396153e-77 0.0" />
+            <origin xyz="0.07474878535887866 -0.0929767185719902 0.07359079941501208" rpy="0.0 -4.663963129396153e-77 0.0" />
             <mass value="0.7818877668805357" />
-            <inertia ixx="0.003421827232823471" iyy="0.004391842901898757" izz="0.003363332496486904" ixy="-8.893594203307487e-07" iyz="2.2033683709787866e-06" ixz="-9.83418910645989e-06" />
+            <inertia ixx="0.003421827232823027" iyy="0.004391842901898535" izz="0.0033633324964865707" ixy="-8.893594203168709e-07" iyz="2.2033683713118535e-06" ixz="-9.83418910645295e-06" />
         </inertial>
         <visual name="Mail_Spreader_Housing_visual">
-            <origin xyz="0.07500000000000098 -0.10000000000000085 0.075000000000001" rpy="-3.141592653589793 -1.5707963267948915 0" />
+            <origin xyz="0.07500000000000102 -0.10000000000000099 0.07500000000000057" rpy="-3.141592653589793 -1.5707963267948915 0" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Spreader_Housing.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="light_green" />
         </visual>
         <collision name="Mail_Spreader_Housing_collision">
-            <origin xyz="0.07500000000000098 -0.10000000000000085 0.075000000000001" rpy="-3.141592653589793 -1.5707963267948915 0" />
+            <origin xyz="0.07500000000000102 -0.10000000000000099 0.07500000000000057" rpy="-3.141592653589793 -1.5707963267948915 0" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Spreader_Housing.stl" scale="0.001 0.001 0.001" />
             </geometry>
@@ -322,19 +322,19 @@
     </link>
     <link name="$(arg prefix)Mail_Top_Plate">
         <inertial>
-            <origin xyz="3.258106006185813e-05 0.07820551417803373 1.0480505352461477e-15" rpy="-2.8486550277460926e-64 -0.0 0.0" />
+            <origin xyz="3.258106006185813e-05 0.0782055141780333 1.056932319443149e-15" rpy="-2.8486550277462006e-64 -0.0 0.0" />
             <mass value="0.08915200000000002" />
-            <inertia ixx="0.00038731642016922446" iyy="0.0002032497645628878" izz="0.00018581264713213308" ixy="-1.370908783160374e-06" iyz="1.3738562485500568e-35" ixz="1.4022694188951907e-36" />
+            <inertia ixx="0.0003873164201692175" iyy="0.00020324976456292942" izz="0.00018581264713213308" ixy="-1.370908783160374e-06" iyz="-1.7347234759768069e-18" ixz="1.734723475976807e-18" />
         </inertial>
         <visual name="Mail_Top_Plate_visual">
-            <origin xyz="-2.842170943040401e-16 0.07500000000000072 1.0214051826551441e-15" rpy="-3.141592653589793 -4.857225732735153e-16 -1.5707963267948915" />
+            <origin xyz="-4.263256414560601e-16 0.07500000000000029 1.0302869668521452e-15" rpy="-3.141592653589793 -4.857225732735152e-16 -1.5707963267948915" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Top_Plate.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="light_green" />
         </visual>
         <collision name="Mail_Top_Plate_collision">
-            <origin xyz="-2.842170943040401e-16 0.07500000000000072 1.0214051826551441e-15" rpy="-3.141592653589793 -4.857225732735153e-16 -1.5707963267948915" />
+            <origin xyz="-4.263256414560601e-16 0.07500000000000029 1.0302869668521452e-15" rpy="-3.141592653589793 -4.857225732735152e-16 -1.5707963267948915" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Mail_Top_Plate.stl" scale="0.001 0.001 0.001" />
             </geometry>
@@ -342,19 +342,19 @@
     </link>
     <link name="$(arg prefix)Letter_Trimmer_Holder">
         <inertial>
-            <origin xyz="0.028766362717210114 -0.01952090557411964 -2.3980817331903383e-16" rpy="2.8486550277460926e-64 -0.0 0.0" />
+            <origin xyz="0.0287663627172104 -0.01952090557411964 -1.9539925233402755e-16" rpy="2.8486550277462006e-64 -0.0 0.0" />
             <mass value="0.041840657300680255" />
-            <inertia ixx="4.5702849910768395e-05" iyy="7.05949785265586e-05" izz="3.3560235428872764e-05" ixy="-2.2850515949551786e-06" iyz="-2.918709552920438e-35" ixz="-2.168404344971009e-18" />
+            <inertia ixx="4.5702849910761456e-05" iyy="7.059497852653779e-05" izz="3.356023542883113e-05" ixy="-2.285051594941301e-06" iyz="4.3368086899420173e-19" ixz="-4.336808689942018e-19" />
         </inertial>
         <visual name="Letter_Trimmer_Holder_visual">
-            <origin xyz="0.034500000000000454 -0.028000000000000684 1.1191048088221578e-15" rpy="5.2085854454827684e-15 -1.5707963267948961 0" />
+            <origin xyz="0.0345000000000006 -0.028000000000000684 1.1546319456101628e-15" rpy="5.208585445482771e-15 -1.5707963267948961 0" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Letter_Trimmer_Holder.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="pink" />
         </visual>
         <collision name="Letter_Trimmer_Holder_collision">
-            <origin xyz="0.034500000000000454 -0.028000000000000684 1.1191048088221578e-15" rpy="5.2085854454827684e-15 -1.5707963267948961 0" />
+            <origin xyz="0.0345000000000006 -0.028000000000000684 1.1546319456101628e-15" rpy="5.208585445482771e-15 -1.5707963267948961 0" />
             <geometry>
                 <mesh filename="package://trossen_arm_description/meshes/downdraft/Letter_Trimmer_Holder.stl" scale="0.001 0.001 0.001" />
             </geometry>
@@ -421,12 +421,12 @@
         </collision>
     </link>
     <joint name="$(arg prefix)Chute_Right_and_Chute_House" type="fixed">
-        <origin xyz="-0.26100000000000007 0.0019999999999998864 -0.17350000000000002" rpy="3.141592653589793 -2.465190328815662e-32 -1.5707963267948966" />
+        <origin xyz="-0.26322 0.0019999999999998864 -0.17350000000000002" rpy="3.141592653589793 -2.465190328815662e-32 -1.5707963267948966" />
         <parent link="$(arg prefix)Chute_01" />
         <child link="$(arg prefix)Chute_02" />
     </joint>
     <joint name="$(arg prefix)Chute_Front_and_Chute_House" type="fixed">
-        <origin xyz="-0.08424980000000006 0.0019999999999998864 -0.0015000000000000002" rpy="-3.141592653589793 1.3670076544845265e-15 -3.141592653589793" />
+        <origin xyz="-0.0864698 0.0019999999999998864 -0.0015000000000000002" rpy="-3.141592653589793 1.3670076544845265e-15 -3.141592653589793" />
         <parent link="$(arg prefix)Chute_01" />
         <child link="$(arg prefix)Chute_03" />
     </joint>
@@ -491,17 +491,17 @@
         <child link="$(arg prefix)Top_Camera_frame" />
     </joint>
     <joint name="$(arg prefix)Letter_Trimmer_Holder_and_Mail_Spreader_Housing" type="fixed">
-        <origin xyz="0.075 -0.105 0.005" rpy="-1.5707963267948966 2.9245799595130183e-31 -1.5707963267948966" />
+        <origin xyz="0.075 -0.105 0.005" rpy="-1.5707963267948966 2.9245799595130017e-31 -1.5707963267948966" />
         <parent link="$(arg prefix)Mail_Spreader_Housing" />
         <child link="$(arg prefix)Letter_Trimmer_Holder" />
     </joint>
     <joint name="$(arg prefix)Mail_Top_Plate_and_Mail_Spreader_Housing" type="fixed">
-        <origin xyz="0.075 -0.17449999999999988 0.0" rpy="1.5707963267948966 -2.9245799595130183e-31 1.5707963267948966" />
+        <origin xyz="0.075 -0.17449999999999988 0.0" rpy="1.5707963267948966 -2.9245799595130017e-31 1.5707963267948966" />
         <parent link="$(arg prefix)Mail_Spreader_Housing" />
         <child link="$(arg prefix)Mail_Top_Plate" />
     </joint>
     <joint name="$(arg prefix)Mail_Spreader_Housing_and_Chute" type="fixed">
-        <origin xyz="-0.26100000000000007 0.0 -0.0015000000000000002" rpy="3.141592653589793 1.5707963267948966 0" />
+        <origin xyz="-0.26322 0.0 -0.0015000000000000002" rpy="3.141592653589793 1.5707963267948966 0" />
         <parent link="$(arg prefix)Chute_01" />
         <child link="$(arg prefix)Mail_Spreader_Housing" />
     </joint>
