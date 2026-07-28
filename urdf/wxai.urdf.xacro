@@ -5,14 +5,14 @@
   <xacro:arg name="arm_side"                        default=""/>            <!-- '', 'left', 'right' -->
   <xacro:arg name="prefix"                          default=""/>
   <xacro:arg name="use_world_frame"                 default="false"/>       <!-- 'true', 'false' -->
-  <xacro:arg name="ros2_control_hardware_type"      default="real"/>        <!-- 'real', 'mock_components' -->
-  <xacro:arg name="ip_address"                      default="192.168.1.2"/>
+  <xacro:arg name="ros2_control_hardware_type"      default="mock_components"/>        <!-- 'real', 'mock_components' -->
+  <xacro:arg name="ip_address"                      default="192.168.1.4"/>
   <xacro:arg name="base_link_frame"                 default="base_link"/>
   <xacro:arg name="use_suction_cup"                 default="true"/>
   <xacro:arg name="use_downdraft"                   default="true"/>
-  <xacro:arg name="xyz"                             default="0.75 -0.234 0.99"/>
+  <xacro:arg name="xyz"                             default="0.707 -0.1975 0.99"/>
   <xacro:arg name="rpy"                             default="0 0 1.57"/>
-  <xacro:arg name="custom_mount_xyz"                default="-0.029 0.0 -0.02"/>
+  <xacro:arg name="custom_mount_xyz"                default="0 0 -0.07"/>
   <xacro:arg name="custom_mount_rpy"                default="0 0 0"/>
 
   <xacro:if value="$(arg use_world_frame)">
@@ -27,7 +27,7 @@
 
   <xacro:include filename="$(find trossen_arm_description)/urdf/macros/_wxai.urdf.xacro" />
   <xacro:include filename="$(find trossen_arm_description)/urdf/macros/_common.urdf.xacro" />
-  <xacro:include filename="$(find trossen_arm_description)/urdf/custom_mount.xacro" />
+  <!-- <xacro:include filename="$(find trossen_arm_description)/urdf/custom_mount.xacro" /> -->
 
   <xacro:trossen_black/>
 
@@ -65,11 +65,11 @@
     </joint>
   </xacro:if>
 
-  <joint name="$(arg prefix)custom_mount_gripper" type="fixed">
-    <parent link="$(arg prefix)link_6" />
+  <!-- <joint name="$(arg prefix)custom_mount_gripper" type="fixed">
+    <parent link="$(arg prefix)link_5" />
     <child link="$(arg prefix)Custom_Mount" />
     <origin xyz="$(arg custom_mount_xyz)" rpy="$(arg custom_mount_rpy)" />
-  </joint>
+  </joint> -->
 
 
 </robot>
