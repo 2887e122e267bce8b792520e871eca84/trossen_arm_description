@@ -8,6 +8,7 @@
   <xacro:arg name="ros2_control_hardware_type"      default="real"/>        <!-- 'real', 'mock_components' -->
   <xacro:arg name="ip_address"                      default="192.168.1.2"/>
   <xacro:arg name="base_link_frame"                 default="base_link"/>
+  <xacro:arg name="use_suction_cup"                 default="true"/>
 
   <xacro:if value="$(arg use_world_frame)">
     <link name="world"/>
@@ -30,5 +31,14 @@
     prefix="$(arg prefix)"
     ros2_control_hardware_type="$(arg ros2_control_hardware_type)"
     ip_address="$(arg ip_address)"/>
+
+  <xacro:if value="$(arg use_suction_cup)">
+    <xacro:include filename="$(find trossen_arm_description)/urdf/suction_cup.xacro" />
+    <joint name="$(arg prefix)robot_mount_and_link_6" type="fixed">
+      <parent link="$(arg prefix)link_6" /> 
+      <child link="$(arg prefix)Robot_Mount" /> 
+      <origin xyz="0.01 0 -0.028" rpy="0 ${pi} ${pi}" /> 
+    </joint>
+  </xacro:if>
 
 </robot>

@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="wxai" xmlns:xacro="http://ros.org/wiki/xacro">
+    <link name="$(arg prefix)Robot_Mount">
+        <inertial>
+            <origin xyz="0.023039432816014428 -2.886050069033401e-07 -0.0010120472288019753" rpy="0.0 0.0 0.0" />
+            <mass value="0.015035480137282448" />
+            <inertia ixx="6.100946736320096e-06" iyy="2.0025099185557024e-06" izz="7.829317540503041e-06" ixy="4.123440681884477e-12" iyz="-5.821062117423287e-12" ixz="-1.420628012057564e-07" />
+        </inertial>
+        <visual name="Robot_Mount_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Robot_Mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="trossen_black" />
+        </visual>
+        <collision name="Robot_Mount_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Robot_Mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Suction_Mount">
+        <inertial>
+            <origin xyz="-0.008141916248896219 0.024000000000294466 -0.0016142637849688947" rpy="0.0 -0.0 0.0" />
+            <mass value="0.006136611423707711" />
+            <inertia ixx="1.8518924928104296e-06" iyy="5.007499186912849e-07" izz="2.3432443921671424e-06" ixy="-1.3045050534496835e-20" iyz="1.134748165220777e-21" ixz="-6.888387928908217e-09" />
+        </inertial>
+        <visual name="Suction_Mount_visual">
+            <origin xyz="0.01970044329444612 0.055894873276131865 0.0002761360280348058" rpy="-3.1415926535897927 0.0140155836747594 3.141592653589783" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Suction_Mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="trossen_black" />
+        </visual>
+        <collision name="Suction_Mount_collision">
+            <origin xyz="0.01970044329444612 0.055894873276131865 0.0002761360280348058" rpy="-3.1415926535897927 0.0140155836747594 3.141592653589783" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Suction_Mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Tube">
+        <inertial>
+            <origin xyz="-0.00020266747462846624 -2.404799570309718e-06 -0.014783729834148699" rpy="0.0 -0.0 0.0" />
+            <mass value="0.003453051192415943" />
+            <inertia ixx="2.5943254215232204e-07" iyy="2.5947658855606697e-07" izz="1.459722383651731e-07" ixy="1.395732219869681e-12" iyz="3.251163475676906e-11" ixz="-1.6742139156221522e-09" />
+        </inertial>
+        <visual name="Tube_visual">
+            <origin xyz="-0.0001856966359611434 -2.944724492460332e-13 -0.013248703482667584" rpy="-1.5707963267948517 1.556780743120137 -3.141592653589738" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Tube.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gold" />
+        </visual>
+        <collision name="Tube_collision">
+            <origin xyz="-0.0001856966359611434 -2.944724492460332e-13 -0.013248703482667584" rpy="-1.5707963267948517 1.556780743120137 -3.141592653589738" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Tube.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Suction_Cup">
+        <inertial>
+            <origin xyz="0.00024101162851149384 -0.017194508513598022 -1.2846477585504542e-12" rpy="0.0 3.344718199793461e-79 0.0" />
+            <mass value="0.005719893698380987" />
+            <inertia ixx="7.464070492568867e-07" iyy="4.843293743749059e-07" izz="7.464585540790224e-07" ixy="3.674133944433839e-09" iyz="-4.4552512207196983e-17" ixz="6.2405897764067e-19" />
+        </inertial>
+        <visual name="Suction_Cup_visual">
+            <origin xyz="0.000490534134996885 -0.034996561828796846 -2.9444809262780766e-13" rpy="-3.1415926535897922 9.981138265226035e-15 -3.1275770699150347" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Suction_Cup.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="white" />
+        </visual>
+        <collision name="Suction_Cup_collision">
+            <origin xyz="0.000490534134996885 -0.034996561828796846 -2.9444809262780766e-13" rpy="-3.1415926535897922 9.981138265226035e-15 -3.1275770699150347" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Suction_Cup.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Connector">
+        <inertial>
+            <origin xyz="-0.006035453313556243 -3.157895826775448e-09 8.462871903084591e-05" rpy="-1.672739214093048e-61 -0.0 -8.758115402030107e-47" />
+            <mass value="0.003600313586168881" />
+            <inertia ixx="1.0441029257621771e-07" iyy="2.377222125910731e-07" izz="2.3769603035385444e-07" ixy="5.3028428560987e-15" iyz="-3.6139401514791784e-16" ixz="1.8685109941230216e-09" />
+        </inertial>
+        <visual name="Connector_visual">
+            <origin xyz="-0.02049798170421111 -2.9445700609421275e-13 0.0002873138266136444" rpy="-1.570796326794184 1.556780743120138 -3.1415926535890764" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Connector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="silver" />
+        </visual>
+        <collision name="Connector_collision">
+            <origin xyz="-0.02049798170421111 -2.9445700609421275e-13 0.0002873138266136444" rpy="-1.570796326794184 1.556780743120138 -3.1415926535890764" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Connector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Pillar_1">
+        <inertial>
+            <origin xyz="0.0004905933323246714 2.9408919743900697e-13 -0.035001275944123764" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0013388273443615541" />
+            <inertia ixx="5.500075558004743e-07" iyy="5.501142075032363e-07" izz="7.25296774205685e-09" ixy="-8.470329472543001e-22" iyz="1.410339314052576e-38" ixz="7.609015366862596e-09" />
+        </inertial>
+        <visual name="Pillar_1_visual">
+            <origin xyz="0.00028030039967353205 2.94302360259735e-13 -0.019998036145729862" rpy="-6.71403928271207e-16 -0.014015583674759101 -1.0138418211707922e-14" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Pillar_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gold" />
+        </visual>
+        <collision name="Pillar_1_collision">
+            <origin xyz="0.00028030039967353205 2.94302360259735e-13 -0.019998036145729862" rpy="-6.71403928271207e-16 -0.014015583674759101 -1.0138418211707922e-14" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Pillar_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Pillar_2">
+        <inertial>
+            <origin xyz="-0.0004904652005971322 -2.9552138514077344e-13 -0.034991852058805756" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0013388273443615541" />
+            <inertia ixx="5.500075558004811e-07" iyy="5.501142075032363e-07" izz="7.252967742058544e-09" ixy="2.1175823681357363e-22" iyz="8.470329472543002e-22" ixz="-7.609015366859208e-09" />
+        </inertial>
+        <visual name="Pillar_2_visual">
+            <origin xyz="-0.0007007581333641965 -2.952993405358484e-13 -0.04999509185719802" rpy="3.141592653589791 -0.0140155836747612 -3.1415926535897345" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Pillar_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gold" />
+        </visual>
+        <collision name="Pillar_2_collision">
+            <origin xyz="-0.0007007581333641965 -2.952993405358484e-13 -0.04999509185719802" rpy="3.141592653589791 -0.0140155836747612 -3.1415926535897345" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Pillar_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Pillar_3">
+        <inertial>
+            <origin xyz="0.0004905947993445103 2.3648638602935534e-13 -0.035001277941195535" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0013388273443615541" />
+            <inertia ixx="5.50007555728158e-07" iyy="5.501142075755525e-07" izz="7.252967742044992e-09" ixy="-6.352747104407249e-22" iyz="1.4103393138588155e-38" ixz="7.609015365842768e-09" />
+        </inertial>
+        <visual name="Pillar_3_visual">
+            <origin xyz="0.0002803018666352486 2.9446223237528104e-13 -0.01999803814280245" rpy="-0.014015583674757495 9.08995101411846e-16 1.5707963267948868" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Pillar_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gold" />
+        </visual>
+        <collision name="Pillar_3_collision">
+            <origin xyz="0.0002803018666352486 2.9446223237528104e-13 -0.01999803814280245" rpy="-0.014015583674757495 9.08995101411846e-16 1.5707963267948868" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Pillar_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="$(arg prefix)Pillar_4">
+        <inertial>
+            <origin xyz="-0.00049046666755876 -2.936362264449599e-13 -0.034991854055877826" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0013388273443615541" />
+            <inertia ixx="5.500075558004811e-07" iyy="5.501142075032363e-07" izz="7.252967742058544e-09" ixy="4.235164736271487e-22" iyz="-4.4831442782845664e-38" ixz="-7.609015366859208e-09" />
+        </inertial>
+        <visual name="Pillar_4_visual">
+            <origin xyz="-0.0007007596003257888 -2.9344970897682286e-13 -0.04999509385427009" rpy="-3.1415926535897927 -0.014015583674758962 -3.141592653589783" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Pillar_4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gold" />
+        </visual>
+        <collision name="Pillar_4_collision">
+            <origin xyz="-0.0007007596003257888 -2.9344970897682286e-13 -0.04999509385427009" rpy="-3.1415926535897927 -0.014015583674758962 -3.141592653589783" />
+            <geometry>
+                <mesh filename="package://trossen_arm_description/meshes/suction_cup/Pillar_4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="$(arg prefix)Pillar_1_and_Robot_Mount" type="fixed">
+        <origin xyz="0.01499999789681965 -0.02400000000029432 0.0029999995500008935" rpy="-3.1415926535897927 -0.0140155836747613 3.141592653589783" />
+        <parent link="$(arg prefix)Robot_Mount" />
+        <child link="$(arg prefix)Pillar_1" />
+    </joint>
+    <joint name="$(arg prefix)Pillar_3_and_Robot_Mount" type="fixed">
+        <origin xyz="0.030999999335647992 0.01599999999970552 0.0029999975325647912" rpy="-3.1415926535897927 -0.0140155836747613 3.141592653589783" />
+        <parent link="$(arg prefix)Robot_Mount" />
+        <child link="$(arg prefix)Pillar_3" />
+    </joint>
+    <joint name="$(arg prefix)Suction_Mount_and_Pillar_1" type="fixed">
+        <origin xyz="0.0009810599999999958 0.0 -0.06999312999999999" rpy="4.930380657631324e-32 -1.1128805398030484e-62 2.2571898948218404e-31" />
+        <parent link="$(arg prefix)Pillar_1" />
+        <child link="$(arg prefix)Suction_Mount" />
+    </joint>
+    <joint name="$(arg prefix)Pillar_4_and_Suction_Mount" type="fixed">
+        <origin xyz="0.0 0.048 0.0" rpy="3.141592653589793 -0.0 2.443619913438525e-30" />
+        <parent link="$(arg prefix)Suction_Mount" />
+        <child link="$(arg prefix)Pillar_4" />
+    </joint>
+    <joint name="$(arg prefix)Pillar_2_and_Suction_Mount" type="fixed">
+        <origin xyz="-0.01599843 0.007999999999999998 -0.00022423999999999112" rpy="3.141592653589793 -0.0 2.443619913438525e-30" />
+        <parent link="$(arg prefix)Suction_Mount" />
+        <child link="$(arg prefix)Pillar_2" />
+    </joint>
+    <joint name="$(arg prefix)Tube_and_Suction_Mount" type="fixed">
+        <origin xyz="-0.008158950000000012 0.024 -0.0001143599999999978" rpy="3.141592653589793 -0.0 2.443619913438525e-30" />
+        <parent link="$(arg prefix)Suction_Mount" />
+        <child link="$(arg prefix)Tube" />
+    </joint>
+    <joint name="$(arg prefix)Connector_and_Tube" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="1.207299564387568e-16 1.5707963267948966 0" />
+        <parent link="$(arg prefix)Tube" />
+        <child link="$(arg prefix)Connector" />
+    </joint>
+    <joint name="$(arg prefix)Suction_Cup_and_Connector" type="fixed">
+        <origin xyz="-0.007999209999999994 1.3536242715921195e-20 0.00011212000000000444" rpy="-1.5707963267948966 -1.5707963267948966 0" />
+        <parent link="$(arg prefix)Connector" />
+        <child link="$(arg prefix)Suction_Cup" />
+    </joint>
+</robot>
